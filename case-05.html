@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="this is the description">
+    <meta name="keywords" content="java,html,css,go,react,angular">
+    <meta name="author" content="Dilsha">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assests/normalize.css">
+    <title>case-05</title>
+</head>
+<style>
+    main{
+        width: 100vw;
+        height: 95vh;
+        border: 8px solid red;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    section{
+
+        display: flex;
+        width: fit-content;
+        animation:animation-slide alternate 3s;
+    }
+    section>div{
+        width: 100vw;
+        height: 100vh;
+    }
+    section> div:nth-child(1){
+        background: url("Assests/image/slide1.jpeg");
+        background-size: cover;
+        background-position:center ;
+    }
+    section> div:nth-child(2){
+        background: url("Assests/image/slide2.jpeg");
+        background-size: cover;
+        background-position:center ;
+    }
+    section> div:nth-child(3){
+        background: url("Assests/image/slide3.jpeg");
+        background-size: cover;
+        background-position:center ;
+    }
+    section> div:nth-child(4){
+        background: url("Assests/image/slide4.jpeg");
+        background-size: cover;
+        background-position:center ;
+    }
+    @keyframes animation-slide  {
+        0%,20%{
+            transform: translateX(0%);
+        }
+        25%,45%{
+            transform: translateX(-25%);
+        }
+        50%,70%{
+            transform: translateX(-50%);
+        }
+        75%, 100%{
+            transform: translateX(-75%);
+
+        }
+    }
+
+
+</style>
+<body>
+<main>
+    <section>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+    </section>
+
+</main>
+
+
+</body>
+</html>
